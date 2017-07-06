@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import App from './App'
 import * as firebase from 'firebase'
-// import { Link } from 'react-router'
 import { Router } from 'react-router'
 import { Route } from 'react-router'
-// import { Redirect} from 'react-router'
 
 
 
@@ -24,11 +23,9 @@ class signUpPage extends Component {
 
   render () {
     return (
-      <div id="signUpPage">
-        <form>
-          <input>Name</input>
-          <input>Age</input>
-        </form>
+      <div>
+        <h2>Sign Up Please</h2>
+        <form></form>
       </div>
     )
   }

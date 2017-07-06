@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import * as firebase from 'firebase'
-// import { Router } from 'react-router'
-// import { Route } from 'react-router'
-// import { Redirect} from 'react-router'
-// import { Link } from 'react-router-dom'
-// import { browserHistory } from 'react-router'
-import signUpPage from './signUpPage'
+import { NavLink } from 'react-router-dom'
+import SignUpPage from './SignUpPage'
 import Layout from './Layout'
 
 var config = {
@@ -19,24 +15,14 @@ var config = {
   messagingSenderId: '532473625190'
 }
 
-// var Link = require('react-router-dom').Link
-
-// const app = (
-//   <Router>
-//     <Router history={} />
-//     <Redirect from="/" to="/Layout" />
-//     <Route path="/" component={Layout} />
-//     <Route path="/signUpPage" component={signUpPage} />
-//   </Router>
-// )
-
 class App extends Component {
 
   constructor () {
     super()
     this.state = {
       speed: 10,
-      name: ' '
+      name: ' ',
+      favNumber: 99
     }
   }
 
@@ -48,6 +34,13 @@ class App extends Component {
         speed: snap.val()
       })
     })
+    // const otherRef = rootRef.child('favNumber')
+    // otherRef.on('value', snap => {
+    //   this.setState({
+    //     favNumber: snap.val()
+    //   })
+    // })
+
     // const auth = firebase.auth()
     // auth.signInWithEmailAndPassword(email, pass)
     // auth.createUserWithEmailAndPassWord(email, pass)
@@ -140,16 +133,16 @@ class App extends Component {
 
   render () {
 
-    // <Router>
-    //   <Redirect from="/" to="/Layout" />
-    //   <Route path="/" component={Layout} />
-    //   <Route path="/signUpPage" component={signUpPage} />
-    // </Router>
-
-
       const preObject = document.getElementById('object')
       const dbRefObject = firebase.database().ref().child('object')
       dbRefObject.on('value', snap => console.log(snap.val()))
+
+      // const otherRef = dbRefObject.child('favNumber')
+      // dbRefObject.on('value', snap => {
+      //   this.setState({
+      //     favNumber: snap.val()
+      //   })
+      // })
 
     return (
 
@@ -166,14 +159,22 @@ class App extends Component {
           <br />
           <div id="btnContainer">
             <button id="btnLogin" className="btn btn-action">
+              <NavLink to="./Home">
               Log In
+            </NavLink>
             </button>
             <button id="btnSignUp" className="btn btn-secondary">
+              <NavLink to="/SignUpPage">
               Sign Up
+            </NavLink>
             </button>
+            <li>
             <button id="btnLogout" className="btn btn-action hide">
+              <NavLink to="/">
               Log Out
+            </NavLink>
             </button>
+          </li>
           </div>
           <input id="txtPassword" type="password" placeholder="Password">
           </input>
@@ -184,7 +185,7 @@ class App extends Component {
           <pre id="object">
 
           </pre>
-          <h1>{this.state.speed}</h1>
+          <h1>{this.state.speed}</h1><h1>{this.state.favNumber}</h1>
         </div>
     )
   }
