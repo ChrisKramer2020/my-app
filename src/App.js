@@ -132,7 +132,7 @@ class App extends Component {
 
 
   render () {
-
+      var Alert = require('react-bootstrap').Alert;
       const preObject = document.getElementById('object')
       const dbRefObject = firebase.database().ref().child('object')
       dbRefObject.on('value', snap => console.log(snap.val()))
@@ -154,6 +154,8 @@ class App extends Component {
           <span id="account-details"></span>
         </header>
         <h1 id="usrName">Welcome Back{this.state.name}</h1>
+        <h1>{this.state.speed}</h1><h1>{this.state.favNumber}</h1>
+
           <div className="container">
           </div>
           <br />
@@ -185,7 +187,6 @@ class App extends Component {
           <pre id="object">
 
           </pre>
-          <h1>{this.state.speed}</h1><h1>{this.state.favNumber}</h1>
         </div>
     )
   }
