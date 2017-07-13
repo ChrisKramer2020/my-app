@@ -37,7 +37,7 @@ h1 {
 }
 
 .container {
-  margin:auto;
+  /*margin:auto;
   margin-top: 0px;
   width: 90%;
   top: 0px;
@@ -48,11 +48,11 @@ h1 {
   float: right;
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 #btnLogin,#btnSignUp,#btnLogout{
-
+  display: none;
 }
 
 #btnLogin:hover {
@@ -69,20 +69,78 @@ input {
 
 }
 
-#btnContainer {
+#hay1 {
+  display: -webkit-inline-box;
+}
 
+#hide {
+  list-style-type: none;
+  justify-content: space-between;
+  width: 90vw;
+  flex-direction: row;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#nav-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: -10px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: rgba(96,99,12,0.58);
+  }
+  a:hover {
+  color: #1abc9c !important;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+#btnContainer {
+  flex-direction: column;
+  display: flex;
+  float: right;
 }
 
 #firebaseui-auth-container {
-  position: relative;
-  top: 0px;
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100vw;
+  top: 100px;
+  background-color: rgba(71, 68, 79, 0.95);
 }
 
+#foot {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#soc,#soc-3 {
+  float: left;
+  padding-left: 200px;
+}
+
+#soc-1,#soc-2 {
+  float: right;
+  padding-right: 200px;
+}
+
+li {
+  list-style-type: none
+}
 
 #usrName {
   position: relative;
   color: #333;
   font-weight: 400;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 #txtPassword,#txtEmail {

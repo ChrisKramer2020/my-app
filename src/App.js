@@ -22,7 +22,8 @@ class App extends Component {
     this.state = {
       speed: 10,
       name: ' ',
-      favNumber: 99
+      favNumber: 99,
+      userName: ''
     }
   }
 
@@ -34,19 +35,12 @@ class App extends Component {
         speed: snap.val()
       })
     })
-    // const otherRef = rootRef.child('favNumber')
-    // otherRef.on('value', snap => {
-    //   this.setState({
-    //     favNumber: snap.val()
-    //   })
-    // })
-
-    // const auth = firebase.auth()
-    // auth.signInWithEmailAndPassword(email, pass)
-    // auth.createUserWithEmailAndPassWord(email, pass)
-    // authonAuthStateChanged(firebaseUser => {
-    //
-    // })
+    const userRef = rootRef.child('userName')
+    userRef.on('value', snap => {
+      this.setState({
+        userName: snap.val()
+      })
+    })
 
     const txtEmail = document.getElementById('txtEmail')
     const txtPassword = document.getElementById('txtPassword')
@@ -153,9 +147,10 @@ class App extends Component {
           <span id="sign-in-status"></span>
           <span id="account-details"></span>
         </header>
-        <h1 id="usrName">Welcome Back{this.state.name}</h1>
-        <h1>{this.state.speed}</h1><h1>{this.state.favNumber}</h1>
-
+        <div id="hay1">
+        <h1 id="usrName">Welcome </h1>
+        {/* <h1>{this.state.userName}</h1><h1>{this.state.favNumber}</h1> */}
+      </div>
           <div className="container">
           </div>
           <br />
@@ -165,25 +160,51 @@ class App extends Component {
               Log In
             </NavLink>
             </button>
-            <button id="btnSignUp" className="btn btn-secondary">
+            {/* <button id="btnSignUp" className="btn btn-secondary">
               <NavLink to="/SignUpPage">
               Sign Up
             </NavLink>
-            </button>
+            </button> */}
             <button id="btnLogout" className="btn btn-action hide">
               <NavLink to="/">
               Log Out
             </NavLink>
             </button>
           </div>
-          <div id="inputs">
+          {/* <div id="inputs">
           <input id="txtPassword" type="password" placeholder="Password">
           </input>
           <br />
           <input id="txtEmail" type="email" placeholder="Email">
           </input>
-        </div>
-          <div id="firebaseui-auth-container">firebaseui-auth-container</div>
+        </div> */}
+          <div id="firebaseui-auth-container"></div>
+          <footer id="foot">
+            <ul id="soc">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+            <ul id="soc-1">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+            <ul id="soc-2">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+            <ul id="soc-3">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </footer>
           <pre id="object">
 
           </pre>

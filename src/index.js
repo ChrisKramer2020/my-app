@@ -34,6 +34,7 @@ registerServiceWorker()
 ReactDOM.render(
   <Router>
     <div>
+      <nav id="nav-bar">
       <ul id="hide">
         <li><Link to="/">App.js</Link></li>
         <li><Link to="/SignUpPage">Sign Up</Link></li>
@@ -41,7 +42,7 @@ ReactDOM.render(
         <li><Link to="/Submit">Submit</Link></li>
         <li><Link to="/Home">Home</Link></li>
       </ul>
-
+    </nav>
       <hr/>
 
       <Route exact path="/" component={App}/>
