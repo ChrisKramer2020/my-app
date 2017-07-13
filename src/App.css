@@ -24,6 +24,12 @@
   to { transform: rotate(360deg); }
 }
 
+#inputs,input {
+  position: relative;
+  display: block;
+  top: 0;
+}
+
 .container {
   margin:auto;
   margin-top: 0px;
@@ -40,18 +46,7 @@
 }
 
 #btnLogin,#btnSignUp,#btnLogout{
-  font-weight: 500;
-  font-size: 1.3rem;
-  letter-spacing: .02em;
-  border: none;
-  flex-direction: column;
-  justify-content: space-between;
-  display: flex;
-  position: relative;
-  border-radius: 5px;
-  padding: .3rem 1rem .3rem;
-  text-shadow: 0 1px rgba(black,.3);
-  box-shadow: 0 0 2px rgba(black,.2);
+
 }
 
 #btnLogin:hover {
@@ -80,14 +75,7 @@ input {
 }
 
 #btnContainer {
-  justify-content: space-between;
-  flex-direction: column;
-  display: flex;
-  width: 50%;
-  position: absolute;
-  top: 0px;
-  left: 1100px;
-  z-index: 1;
+
 }
 
 #firebaseui-auth-container {

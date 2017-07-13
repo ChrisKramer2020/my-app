@@ -168,19 +168,19 @@ class App extends Component {
               Sign Up
             </NavLink>
             </button>
-            <li>
             <button id="btnLogout" className="btn btn-action hide">
               <NavLink to="/">
               Log Out
             </NavLink>
             </button>
-          </li>
           </div>
+          <div id="inputs">
           <input id="txtPassword" type="password" placeholder="Password">
           </input>
           <br />
           <input id="txtEmail" type="email" placeholder="Email">
           </input>
+        </div>
           <div id="firebaseui-auth-container">firebaseui-auth-container</div>
           <pre id="object">
 
