@@ -9,15 +9,23 @@ h1 {
   float: left;
 }
 
-.background-image {
+#background-image-con {
+  position: relative;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+}
+#background-image {
+  background-image: url("http://cdn.wallpapersafari.com/27/11/nz5l0D.jpg");
   /*filter: blur(1px);
   -webkit-filter: blur(1px);*/
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  background-size: contain;
+  width: 100vw;
   background-repeat: no-repeat;
-  /*background-image: url("http://free4kwallpaper.com/wp-content/uploads/2016/01/Blue-Lake-Nature-4K-Wallpaper.jpg");*/
+  background-size: auto;
+  z-index: -12;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 100vh;
 }
 
 .App-logo {
@@ -91,8 +99,7 @@ input {
     margin-bottom: -10px;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: rgba(96,99,12,0.58);
-  }
+    background-color: rgba(6, 23, 106, 0.58);  }
   a:hover {
   color: #1abc9c !important;
 }
@@ -117,7 +124,7 @@ a {
 }
 
 #foot {
-  padding-top: 100px;
+  padding-top: 10m s0px;
   padding-bottom: 100px;
 }
 

@@ -147,10 +147,11 @@ class App extends Component {
           <span id="sign-in-status"></span>
           <span id="account-details"></span>
         </header>
-        <div id="hay1">
-        <h1 id="usrName">Welcome </h1>
-        {/* <h1>{this.state.userName}</h1><h1>{this.state.favNumber}</h1> */}
-      </div>
+        <div id="background-image-con">
+          <div id="background-image">
+            <div id="firebaseui-auth-container"></div>
+          </div>
+        </div>
           <div className="container">
           </div>
           <br />
