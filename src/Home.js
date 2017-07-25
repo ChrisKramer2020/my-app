@@ -10,21 +10,26 @@ class Home extends Component {
 
   render () {
     return <div>
-      <nav>
-      <h2>Home</h2>
-    </nav>
     <div id="Home-Container">
+      <nav>
+        <h2 id="h2-header">Home</h2>
+      </nav>
+      <div id="background-image-home">
       <div id="Feed-Container">
         <div id="Feed">
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
+          <div id="feed-row-1">
+            <div id="story-1">
+                <div id="story-1-img-con">
+              <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+              <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+              <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+            </div>
+          </div>
+          </div>
       </div>
     </div>
     </div>
+  </div>
     </div>
   }
 }

@@ -43,7 +43,6 @@ ReactDOM.render(
         <li><Link to="/Home">Home</Link></li>
       </ul>
     </nav>
-      <hr/>
 
       <Route exact path="/" component={App}/>
       <Route exact path="/SignUpPage" component={SignUpPage}/>
