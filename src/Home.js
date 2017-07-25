@@ -13,6 +13,18 @@ class Home extends Component {
       <nav>
       <h2>Home</h2>
     </nav>
+    <div id="Home-Container">
+      <div id="Feed-Container">
+        <div id="Feed">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+      </div>
+    </div>
+    </div>
     </div>
   }
 }
