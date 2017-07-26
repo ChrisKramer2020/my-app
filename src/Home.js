@@ -23,14 +23,26 @@ class Home extends Component {
                   <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
               <p>This is a paragraph.</p>
+              <p>It's amazing what we can accompolish if we work together.</p>
+            </div>
+            <div id="btn">
+              <button>Download</button>
             </div>
             <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
               <p>This is a paragraph.</p>
+              <p>It's amazing what we can accompolish if we work together.</p>
+            </div>
+            <div id="btn">
+              <button>Download</button>
             </div>
             <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
               <p>This is a paragraph.</p>
+              <p>It's amazing what we can accompolish if we work together.</p>
+            </div>
+            <div id="btn">
+              <button>Download</button>
             </div>
             </div>
           </div>
