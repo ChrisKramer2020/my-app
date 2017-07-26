@@ -20,9 +20,18 @@ class Home extends Component {
           <div id="feed-row-1">
             <div id="story-1">
                 <div id="story-1-img-con">
+                  <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+              <p>This is a paragraph.</p>
+            </div>
+            <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+              <p>This is a paragraph.</p>
+            </div>
+            <div id="img-back">
               <img src="http://livewallpaper.info/wp-content/uploads/2016/06/4k-resolution-wallpaper4.jpg" width="" height="" id="story-1-img"/>
+              <p>This is a paragraph.</p>
+            </div>
             </div>
           </div>
           </div>
