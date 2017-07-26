@@ -47,6 +47,21 @@ class Home extends Component {
             </div>
           </div>
           </div>
+          <div id="feed-row-2">
+            <div id="story-2">
+            <div id="story-2-img-con">
+              <div id="second-img-back">
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+              </div>
+              <div id="second-img-back">
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+              </div>
+              <div id="second-img-back">
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+              </div>
+            </div>
+          </div>
+          </div>
       </div>
     </div>
     </div>
