@@ -99,5 +99,18 @@
 }
 
 #story-3 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  margin-top: inherit;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.42);
+  height: 50vh;
+  width: 100vw;
+  top: 150px;
+}
+
+#third-img-back {
 
 }
