@@ -111,6 +111,13 @@
   top: 150px;
 }
 
-#third-img-back {
+#story-3-img-con {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 100px;
+}
 
+#third-img-back {
+  margin:auto;
 }
