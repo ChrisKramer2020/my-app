@@ -51,13 +51,13 @@ class Home extends Component {
             <div id="story-2">
             <div id="story-2-img-con">
               <div id="second-img-back">
-                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="200" id="second-img"/>
               </div>
               <div id="second-img-back">
-                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="200" id="second-img"/>
               </div>
               <div id="second-img-back">
-                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="196" id="second-img"/>
+                <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/2/image.adapt.full.high.jpg/1497976002959.jpg" width="348" height="200" id="second-img"/>
               </div>
             </div>
           </div>
@@ -66,13 +66,13 @@ class Home extends Component {
             <div id="story-3">
               <div id="story-3-img-con">
                 <div id="third-img-back">
-                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="196" id="third-img" />
+                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="200" id="third-img" />
                 </div>
                 <div id="third-img-back">
-                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="196" id="third-img" />
+                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="200" id="third-img" />
                 </div>
                 <div id="third-img-back">
-                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="196" id="third-img" />
+                  <img src="https://www.mathworks.com/content/mathworks/www/en/product/ltc/matlab/jcr:content/mainParsys/band_copy_copy_1038813977/mainParsys/columns_copy/1/image_copy_1759217800.adapt.full.high.jpg/1499707425072.jpg" width="348" height="200" id="third-img" />
                 </div>
               </div>
             </div>
