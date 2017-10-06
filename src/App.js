@@ -161,50 +161,14 @@ class App extends Component {
               Log In
             </NavLink>
             </button>
-            {/* <button id="btnSignUp" className="btn btn-secondary">
-              <NavLink to="/SignUpPage">
-              Sign Up
-            </NavLink>
-            </button> */}
             <button id="btnLogout" className="btn btn-action hide">
               <NavLink to="/">
               Log Out
             </NavLink>
             </button>
           </div>
-          {/* <div id="inputs">
-          <input id="txtPassword" type="password" placeholder="Password">
-          </input>
-          <br />
-          <input id="txtEmail" type="email" placeholder="Email">
-          </input>
-        </div> */}
           <div id="firebaseui-auth-container"></div>
           <footer id="foot">
-            <ul id="soc">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-            <ul id="soc-1">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-            <ul id="soc-2">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-            <ul id="soc-3">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
           </footer>
           <pre id="object">
 
