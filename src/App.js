@@ -155,7 +155,7 @@ class App extends Component {
           <div className="container">
           </div>
           <br />
-          <div id="btnContainer">
+           <div id="btnContainer">
             <button id="btnLogin" className="btn btn-action">
               <NavLink to="./Home">
               Log In
@@ -166,7 +166,7 @@ class App extends Component {
               Log Out
             </NavLink>
             </button>
-          </div>
+          </div> 
           <div id="firebaseui-auth-container"></div>
           <footer id="foot">
           </footer>

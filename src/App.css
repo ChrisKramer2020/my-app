@@ -21,7 +21,6 @@ h1 {
   height: 100vh;
 }
 #background-image {
-  background-image: url("http://cdn.wallpapersafari.com/27/11/nz5l0D.jpg");
   /*filter: blur(1px);
   -webkit-filter: blur(1px);*/
   width: 100vw;
@@ -51,9 +50,8 @@ h1 {
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
-    font-size: 12px;
+    font-size: 21px;
     letter-spacing: 5px;
-    background-color: rgba(6, 23, 106, 0.58);
   }
   a:hover {
   color: #1abc9c !important;
