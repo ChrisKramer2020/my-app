@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Submit.css'
+import './Friends.css'
 
-class Submit extends Component {
+class Friends extends Component {
   constructor(props) {
     super(props);
     this.state={}
@@ -14,10 +14,10 @@ class Submit extends Component {
   }
   render () {
     return <div>
-      <h2>Submit</h2>
+      <h2>Friends Page</h2>
       <button onClick={this.submitRecipe}>Submit it</button>
     </div>
   }
 }
 
-export default Submit
+export default Friends

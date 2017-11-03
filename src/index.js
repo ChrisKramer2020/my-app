@@ -9,11 +9,12 @@ import {
 } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
+import './App.css'
 import * as firebase from 'firebase'
-import SignUpPage from './SignUpPage'
+import Gallery from './Gallery'
 import Home from './Home'
-import Layout from './Layout'
-import Submit from './Submit'
+import Friends from './Friends'
+import News from './News'
 import createBrowserHistory from 'history/createBrowserHistory'
 
 const history = createBrowserHistory()
@@ -36,18 +37,18 @@ ReactDOM.render(
     <div>
       <nav id="nav-bar">
       <ul id="hide">
-        <li><Link to="/">App.js</Link></li>
-        <li><Link to="/SignUpPage">Sign Up</Link></li>
-        <li><Link to="/Layout">Layout</Link></li>
-        <li><Link to="/Submit">Submit</Link></li>
-        <li><Link to="/Home">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/Gallery">Gallery</Link></li>
+        <li><Link to="/News">News</Link></li>
+        <li><Link to="/Friends">Submit</Link></li>
+        {/* <li><Link to="/Home">Home</Link></li> */}
       </ul>
     </nav>
 
       <Route exact path="/" component={App}/>
-      <Route exact path="/SignUpPage" component={SignUpPage}/>
-      <Route path="/Layout" component={Layout}/>
-      <Route path="/Home" component={Home}/>
-      <Route path="/Submit" component={Submit} history={history} />
+      <Route exact path="/Gallery" component={Gallery}/>
+      <Route path="/News" component={News}/>
+      <Route path="/Friends" component={Friends}/>
+      {/* <Route path="/Submit" component={Submit} history={history} /> */}
     </div>
   </Router>, document.getElementById('root'))

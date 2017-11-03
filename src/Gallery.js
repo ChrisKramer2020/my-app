@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import * as firebase from 'firebase'
-import { NavLink } from 'react-router-dom'
+import { Router } from 'react-router'
+import { Route } from 'react-router'
 
 
 
 
-
-class Layout extends Component {
+class Gallery extends Component {
 
 
   constructor () {
@@ -22,12 +22,13 @@ class Layout extends Component {
 
   render () {
     return (
-      <div id="Layout">
-        <h2>Layout</h2>
+      <div>
+        <h2>Gallery Page</h2>
+        <form></form>
       </div>
     )
   }
 
 }
 
-export default Layout
+export default Gallery

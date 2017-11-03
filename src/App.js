@@ -3,8 +3,9 @@ import logo from './logo.svg'
 import './App.css'
 import * as firebase from 'firebase'
 import { NavLink } from 'react-router-dom'
-import SignUpPage from './SignUpPage'
-import Layout from './Layout'
+import Friends from './Friends'
+import News from './News'
+import Gallery from './Gallery'
 
 var config = {
   apiKey: 'AIzaSyB-tl6QlrDLS8hrZ3DtNfMCv0kD6RtpKBg',
@@ -28,6 +29,7 @@ class App extends Component {
   }
 
   componentDidMount () {
+    // WHEN COMPONENT MOUNTS GO TO FIREBASE DATABASE AND LOOK FOR A CHILD NODE CALLED "SPEED"
     const rootRef = firebase.database().ref()
     const speedRef = rootRef.child('speed')
     speedRef.on('value', snap => {
@@ -35,6 +37,7 @@ class App extends Component {
         speed: snap.val()
       })
     })
+    // EVERYTIME THE SPEED VALUE CHANGES IN THE FIREBASE DATABASE IT WILL UPDATE OUR STATE TO THE NEW VALUE WE SET IN THE DATABASE
     const userRef = rootRef.child('userName')
     userRef.on('value', snap => {
       this.setState({
@@ -42,6 +45,7 @@ class App extends Component {
       })
     })
 
+    // THESE ARE JUST REFERENCES TO THE JSX ELEMENTS WITH THEIR ID
     const txtEmail = document.getElementById('txtEmail')
     const txtPassword = document.getElementById('txtPassword')
     const btnLogin = document.getElementById('btnLogin')
@@ -149,33 +153,61 @@ class App extends Component {
         </header>
         <div id="background-image-con">
           <div id="background-image">
+            <h1>A place to be you.</h1>
             <div id="firebaseui-auth-container"></div>
           </div>
         </div>
           <div className="container">
           </div>
           <br />
-           <div id="btnContainer">
-            <button id="btnLogin" className="btn btn-action">
-              <NavLink to="./Home">
-              Log In
-            </NavLink>
-            </button>
-            <button id="btnLogout" className="btn btn-action hide">
-              <NavLink to="/">
-              Log Out
-            </NavLink>
-            </button>
-          </div> 
           <div id="firebaseui-auth-container"></div>
           <footer id="foot">
+            <section id="footer-spread-one">
+              <figure className="snip1577">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample99.jpg" alt="sample99" />
+                <figcaption>
+                  <h3>Bodrum Salvador</h3>
+                  <h4>Luxery</h4>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+              <figure className="snip1577"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample109.jpg" alt="sample109" />
+              <figcaption>
+                <h3>Jason Response</h3>
+                <h4>Classic</h4>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+            <figure className="snip1577"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample117.jpg" alt="sample117" />
+            <figcaption>
+              <h3>Piff Jenkins</h3>
+              <h4>Vintage</h4>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+            </section>
           </footer>
           <pre id="object">
 
           </pre>
+          <div id="btnContainer">
+            <button id="btnLogin" className="btn btn-action">
+              <NavLink to="./Home">
+              Log In
+            </NavLink>
+          </button>
+          <button id="btnLogout" className="btn btn-action hide">
+            <NavLink to="/">
+            Log Out
+          </NavLink>
+        </button>
         </div>
+      </div>
     )
   }
 }
 
 export default App
+
+
+// BUTTON CONTAINER MIGHT COME IN HANDY LATER

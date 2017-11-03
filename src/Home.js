@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
-import './Home.css'
 import * as firebase from 'firebase'
 import { NavLink } from 'react-router-dom'
 
