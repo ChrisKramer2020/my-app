@@ -10,6 +10,7 @@ import {
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 import './App.css'
+import './Home.css'
 import * as firebase from 'firebase'
 import Gallery from './Gallery'
 import Home from './Home'

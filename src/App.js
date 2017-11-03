@@ -154,13 +154,13 @@ class App extends Component {
         <div id="background-image-con">
           <div id="background-image">
             <h1>A place to be you.</h1>
-            <div id="firebaseui-auth-container"></div>
           </div>
         </div>
+        <div id="firebaseui-auth-container"></div>
+        {/* <div id="firebaseui-auth-container"></div> */}
           <div className="container">
           </div>
           <br />
-          <div id="firebaseui-auth-container"></div>
           <footer id="foot">
             <section id="footer-spread-one">
               <figure className="snip1577">

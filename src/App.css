@@ -86,9 +86,9 @@ h1 {
   display: inline-flex;
   flex-direction: column;
   flex: 1;
-  z-index: 999;
   width: 100vw;
-  top: 100px;
+  position: relative;
+  top: -500px;
 }
 
 #foot {
