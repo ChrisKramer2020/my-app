@@ -38,6 +38,7 @@ ReactDOM.render(
     <div>
       <nav id="nav-bar">
       <ul id="hide">
+        <li id="first-one"><img src="http://www.compu-link.com/main/wp-content/uploads/2014/10/greenLogo.png" width="100" height="100" /></li>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/Gallery">Gallery</Link></li>
         <li><Link to="/News">News</Link></li>

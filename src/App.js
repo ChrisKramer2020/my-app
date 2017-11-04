@@ -161,6 +161,21 @@ class App extends Component {
           <div className="container">
           </div>
           <br />
+          <section className="second-snip">
+            <figure class="snip1570">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample88.jpg" alt="sample88" /><i class="ion-android-arrow-forward"></i>
+              <h3>Malcolm Function</h3>
+              <a href="#"></a>
+            </figure>
+            <figure class="snip1570 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample106.jpg" alt="sample106" /><i class="ion-android-arrow-forward"></i>
+            <h3>Richard Tea</h3>
+            <a href="#"></a>
+          </figure>
+            <figure class="snip1570"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample117.jpg" alt="sample117" /><i class="ion-android-arrow-forward"></i>
+            <h3>Ingredia Nutrisha</h3>
+              <a href="#"></a>
+            </figure>
+          </section>
           <footer id="foot">
             <section id="footer-spread-one">
               <figure className="snip1577">
