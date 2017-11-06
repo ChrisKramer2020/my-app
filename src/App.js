@@ -29,7 +29,9 @@ class App extends Component {
   }
 
   componentDidMount () {
+
     // WHEN COMPONENT MOUNTS GO TO FIREBASE DATABASE AND LOOK FOR A CHILD NODE CALLED "SPEED"
+
     const rootRef = firebase.database().ref()
     const speedRef = rootRef.child('speed')
     speedRef.on('value', snap => {
@@ -37,7 +39,9 @@ class App extends Component {
         speed: snap.val()
       })
     })
+
     // EVERYTIME THE SPEED VALUE CHANGES IN THE FIREBASE DATABASE IT WILL UPDATE OUR STATE TO THE NEW VALUE WE SET IN THE DATABASE
+
     const userRef = rootRef.child('userName')
     userRef.on('value', snap => {
       this.setState({
@@ -157,26 +161,25 @@ class App extends Component {
           </div>
         </div>
         <div id="firebaseui-auth-container"></div>
-        {/* <div id="firebaseui-auth-container"></div> */}
           <div className="container">
           </div>
           <br />
 
           {/* MARKUP FOR THE FIRST UI SNIPPET */}
-
+        <section className="first-snippet-container">
           <figure className="snip1531">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
             <figcaption>
               <h3>Wisteria Ravenclaw</h3>
               <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-              <div class="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
+              <div className="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
             </figcaption>
           </figure>
           <figure className="snip1531"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
           <figcaption>
             <h3>Ursula Gurnmeister</h3>
             <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-            <div class="icons"><a><i class="ion-social-dribbble-outline"></i></a><a><i class="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
+            <div className="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
           </figcaption>
         </figure>
         <figure className="snip1531"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
@@ -186,11 +189,55 @@ class App extends Component {
           <div className="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
         </figcaption>
         </figure>
-
+      </section>
         {/* END OF MARKUP FOR THE FIRST UI SNIPPET */}
 
           <section className="white-bg">
-
+           <div className="png-container">
+            <div className="png-logo-row">
+              <img src="http://www.glamorous-international.com/userfiles/glamorous-international.com/images/Logo-purple.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+            <div className="png-logo-row">
+              <img src="http://moosestooth.net/wp-content/uploads/2016/12/mooses-tooth-small-purple-logo.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+            <div className="png-logo-row">
+              <img src="http://diweb.gr/wp-content/uploads/2017/04/logo-purple.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+          </div>
+          <div className="lower-png-container">
+            <div className="png-logo-row">
+              <img src="http://searchengineland.com/figz/wp-content/seloads/2013/09/BT_wavelogo_purple_huge.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+            <div className="png-logo-row">
+              <img src="http://uafs.edu/sites/default/files/Departments/Marketing/Lion-Blue.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+            <div className="png-logo-row">
+              <img src="http://diweb.gr/wp-content/uploads/2017/04/logo-purple.png" width="100" height="100"/>
+              <h3>Business as Usual</h3>
+              <p>lorem</p>
+            </div>
+          </div>
+          <div className="img-articles">
+            <div className="art-img">
+              <img src="" width="250" height="250" />
+            </div>
+            <div className="art-img">
+              <img src="" width="250" height="250" />
+            </div>
+            <div className="art-img">
+              <img src="" width="250" height="250" />
+            </div>
+          </div>
           </section>
           <footer id="foot">
             <section id="footer-spread-one">
