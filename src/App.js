@@ -161,20 +161,36 @@ class App extends Component {
           <div className="container">
           </div>
           <br />
-          <section className="second-snip">
-            <figure class="snip1570">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample88.jpg" alt="sample88" /><i class="ion-android-arrow-forward"></i>
-              <h3>Malcolm Function</h3>
-              <a href="#"></a>
-            </figure>
-            <figure class="snip1570 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample106.jpg" alt="sample106" /><i class="ion-android-arrow-forward"></i>
-            <h3>Richard Tea</h3>
-            <a href="#"></a>
+
+          {/* MARKUP FOR THE FIRST UI SNIPPET */}
+
+          <figure className="snip1531">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+            <figcaption>
+              <h3>Wisteria Ravenclaw</h3>
+              <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+              <div class="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
+            </figcaption>
           </figure>
-            <figure class="snip1570"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample117.jpg" alt="sample117" /><i class="ion-android-arrow-forward"></i>
-            <h3>Ingredia Nutrisha</h3>
-              <a href="#"></a>
-            </figure>
+          <figure className="snip1531"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+          <figcaption>
+            <h3>Ursula Gurnmeister</h3>
+            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+            <div class="icons"><a><i class="ion-social-dribbble-outline"></i></a><a><i class="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
+          </figcaption>
+        </figure>
+        <figure className="snip1531"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+        <figcaption>
+          <h3>Ingredia Nutrisha</h3>
+          <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+          <div className="icons"><a><i className="ion-social-dribbble-outline"></i></a><a><i className="ion-social-dropbox"></i></a><a><i className="ion-social-instagram-outline"></i></a><a><i className="ion-social-rss"></i></a></div>
+        </figcaption>
+        </figure>
+
+        {/* END OF MARKUP FOR THE FIRST UI SNIPPET */}
+
+          <section className="white-bg">
+
           </section>
           <footer id="foot">
             <section id="footer-spread-one">

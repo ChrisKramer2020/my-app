@@ -75,9 +75,12 @@ h1 {
   font-weight: 500;
   color: #fff;
   margin-top: -15px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  font-style: italic;
   -webkit-font-smoothing:antialiased;
   position: relative;
+  font-size: 3em;
+  text-transform: uppercase;
   top: -3em;
 }
 
@@ -94,6 +97,14 @@ h1 {
   width: 100vw;
   position: relative;
   top: -500px;
+}
+
+.white-bg {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #foot {
@@ -117,6 +128,135 @@ li {
 #txtPassword,#txtEmail {
   color: #333;
 }
+/* STYLING FOR THE FIRST UI SNIPPET */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1531 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px 5px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.2em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.snip1531 *,
+.snip1531 *:before,
+.snip1531 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1531:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1531 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1531 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  padding: 0 30px;
+}
+
+.snip1531 h3 {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
+.snip1531 p {
+  margin: 0 0 10px;
+  opacity: 0.6;
+}
+
+.snip1531 .icons {
+  width: 100%;
+}
+
+.snip1531 a {
+  margin: 2px;
+  display: inline-block;
+}
+
+.snip1531 a i {
+  background-color: #333333;
+  border-radius: 3px;
+  color: #000000;
+  display: block;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  width: 34px;
+}
+
+.snip1531 a i:before {
+  color: #fff;
+}
+
+.snip1531 a i:hover {
+  background-color: #D2B17F;
+  cursor: pointer;
+}
+
+.snip1531:hover:before,
+.snip1531.hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.snip1531:hover figcaption,
+.snip1531.hover figcaption {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
+  text-align: center;
+}
+
+/* END OF STYLING FOR THE FIRST UI SNIPPET */
+
+/* STYLING FOR THE SECOND UI SNIPPET */
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .snip1577 {
@@ -245,159 +385,9 @@ li {
   transition-delay: 0.35s;
 }
 
-
-/* Demo purposes only */
-
 body {
   background-color: #212121;
   text-align: center;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:300);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.snip1570 {
-  font-family: 'Poppins', Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 8px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #000000;
-  font-size: 16px;
-  line-height: 1.2em;
-  text-align: center;
-  font-weight: 300;
-}
-
-.snip1570 *,
-.snip1570 *:before,
-.snip1570 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.65s ease;
-  transition: all 0.65s ease;
-}
-
-.snip1570:after {
-  -webkit-transition: all 0.65s ease;
-  transition: all 0.65s ease;
-  position: absolute;
-  height: 0px;
-  width: 0px;
-  bottom: -478px;
-  right: -478px;
-  border-radius: 50%;
-  border: 500px solid transparent;
-  border-bottom-color: #000000;
-  border-right-color: #000000;
-  content: '';
-  opacity: 0.8;
-}
-
-.snip1570 img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.snip1570 i {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  border-radius: 50%;
-  color: #000000;
-  display: block;
-  z-index: 10;
-}
-
-.snip1570 i:before,
-.snip1570 i:after {
-  border-radius: 50%;
-}
-
-.snip1570 i:before {
-  color: #ddd;
-  background-color: #fff;
-  font-size: 37.64705882px;
-  line-height: 64px;
-  text-align: center;
-  width: 64px;
-}
-
-.snip1570 i:after {
-  position: absolute;
-  top: -14px;
-  bottom: -14px;
-  left: -14px;
-  right: -14px;
-  border: 15px solid #ddd;
-  border-bottom-color: #2980b9;
-  border-right-color: #2980b9;
-  content: '';
-  z-index: -2;
-  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.snip1570 i:hover {
-  background-color: #D2B17F;
-  cursor: pointer;
-}
-
-.snip1570 h3 {
-  top: 5px;
-  color: #fff;
-  letter-spacing: 2px;
-  margin: 0;
-  opacity: 0;
-  padding: 10px 15px;
-  position: absolute;
-  left: 0;
-  text-transform: uppercase;
-  z-index: 3;
-}
-
-.snip1570 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9;
-}
-
-.snip1570:hover:after,
-.snip1570.hover:after {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.snip1570:hover img,
-.snip1570.hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.snip1570:hover i:before,
-.snip1570.hover i:before {
-  color: #2980b9;
-}
-
-.snip1570:hover i:after,
-.snip1570.hover i:after {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.snip1570:hover h3,
-.snip1570.hover h3 {
-  opacity: 1;
-}
-
-
-/* Demo purposes only */
-
-body {
-  background-color: #212121;
-  text-align: center;
-}
+/* END OF STYLING FOR THE SECOND SNIP */
