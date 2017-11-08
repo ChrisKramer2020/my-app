@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import Friends from './Friends'
 import News from './News'
 import Gallery from './Gallery'
+import Home from './Home'
 
 var config = {
   apiKey: 'AIzaSyB-tl6QlrDLS8hrZ3DtNfMCv0kD6RtpKBg',
@@ -30,7 +31,7 @@ class App extends Component {
 
   componentDidMount () {
 
-    // WHEN COMPONENT MOUNTS GO TO FIREBASE DATABASE AND LOOK FOR A CHILD NODE CALLED "SPEED"
+    // WHEN COMPONENT MOUNTS GO TO FIREBASE DATABASE AND LOOK FOR A CHILD NODE CALLED "SPEED" IN THE FIREBASE DATABASE
 
     const rootRef = firebase.database().ref()
     const speedRef = rootRef.child('speed')
@@ -166,6 +167,7 @@ class App extends Component {
           <br />
 
           {/* MARKUP FOR THE FIRST UI SNIPPET */}
+
         <section className="first-snippet-container">
           <figure className="snip1531">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
@@ -190,6 +192,7 @@ class App extends Component {
         </figcaption>
         </figure>
       </section>
+
         {/* END OF MARKUP FOR THE FIRST UI SNIPPET */}
 
           <section className="white-bg">
