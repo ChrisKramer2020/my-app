@@ -68,6 +68,7 @@ class App extends Component {
       const email = txtEmail.value
       const pass = txtPassword.value
       const auth = firebase.auth()
+      
       // Sign in
 
       const promise = auth.signInWithEmailAndPassword(email, pass)
